@@ -61,10 +61,10 @@ module TestRunner =
     // Day1
     let input1 = getInput 1
 
-    let examples1_1 = [| |]
+    let examples1_1 = [| "3   4\n4   3\n2   5\n1   3\n3   9\n3   3" |]
 
-    let exampleResults1_1 = [| |]
+    let exampleResults1_1 = [| "11" |]
 
-    let examples1_2 = [| |]
+    let examples1_2 = examples1_1
 
-    let exampleResults1_2 = [| |]
+    let exampleResults1_2 = [| "31" |]
