@@ -79,3 +79,14 @@ module TestRunner =
     let examples2_2 = examples2_1
 
     let exampleResults2_2 = [| "4" |]
+
+    // Day3
+    let input3 = getInput 3
+
+    let examples3_1 = [| "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))" |]
+
+    let exampleResults3_1 = [| "161" |]
+
+    let examples3_2 = [| "xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))" |]
+
+    let exampleResults3_2 = [| "48" |]
