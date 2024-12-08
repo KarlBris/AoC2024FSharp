@@ -138,13 +138,13 @@ module TestRunner =
     // Day8
     let input8() = getInput 8
 
-    let examples8_1 = [| "" |]
+    let examples8_1 = [| "............\n........0...\n.....0......\n.......0....\n....0.......\n......A.....\n............\n............\n........A...\n.........A..\n............\n............" |]
 
-    let exampleResults8_1 = [| "" |]
+    let exampleResults8_1 = [| "14" |]
 
-    let examples8_2 = [| "" |]
+    let examples8_2 = examples8_1
 
-    let exampleResults8_2 = [| "" |]
+    let exampleResults8_2 = [| "34" |]
 
     // Day9
     let input9() = getInput 9

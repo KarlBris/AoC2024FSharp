@@ -138,6 +138,11 @@ module Utils =
         match arrayWithTwoElements with
         | [| a; b |] -> (a, b)
         | _ -> failwithf "Array does not contain exactly two elements! %A" arrayWithTwoElements
+       
+    let rec makePairs (stuff: 'a list) : ('a * 'a) list =
+        match stuff with
+        | [] -> []
+        | s::ss -> List.append (ss |> List.map (fun s' -> (s,s'))) (makePairs ss)
 
     let eMod (a: int) (b: int) : int = ((a % b) + b) % b
 
@@ -150,6 +155,11 @@ module Utils =
         |> Array.map (fun x -> (x, n % x))
         |> Array.filter (fun (_, n) -> n = 0)
         |> Array.map fst
+
+    // From https://stackoverflow.com/questions/8919006/infinite-sequence-with-repeating-elements
+    let rec numbersFrom n = 
+      seq { yield n
+            yield! numbersFrom (n + 1) }
 
     // From http://www.fssnip.net/4u/title/Very-Fast-Permutations
     let rec permutations =
