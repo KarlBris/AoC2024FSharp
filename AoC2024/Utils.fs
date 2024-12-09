@@ -156,6 +156,9 @@ module Utils =
         |> Array.filter (fun (_, n) -> n = 0)
         |> Array.map fst
 
+    let removeLastElement (arr: 'a array) : 'a array =
+        arr[0..(arr.Length-2)]
+
     // From https://stackoverflow.com/questions/8919006/infinite-sequence-with-repeating-elements
     let rec numbersFrom n = 
       seq { yield n
