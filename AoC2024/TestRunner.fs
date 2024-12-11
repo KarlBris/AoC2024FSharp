@@ -171,13 +171,13 @@ module TestRunner =
     // Day11
     let input11() = getInput 11
 
-    let examples11_1 = [| "" |]
+    let examples11_1 = [| "125 17" |]
 
-    let exampleResults11_1 = [| "" |]
+    let exampleResults11_1 = [| "55312" |]
 
-    let examples11_2 = [| "" |]
+    let examples11_2 = [|  |]
 
-    let exampleResults11_2 = [| "" |]
+    let exampleResults11_2 = [|  |]
 
     // Day12
     let input12() = getInput 12
