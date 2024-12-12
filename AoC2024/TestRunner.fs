@@ -182,13 +182,13 @@ module TestRunner =
     // Day12
     let input12() = getInput 12
 
-    let examples12_1 = [| "" |]
+    let examples12_1 = [| "AAAA\nBBCD\nBBCC\nEEEC";"OOOOO\nOXOXO\nOOOOO\nOXOXO\nOOOOO";"RRRRIICCFF\nRRRRIICCCF\nVVRRRCCFFF\nVVRCCCJFFF\nVVVVCJJCFE\nVVIVCCJJEE\nVVIIICJJEE\nMIIIIIJJEE\nMIIISIJEEE\nMMMISSJEEE" |]
 
-    let exampleResults12_1 = [| "" |]
+    let exampleResults12_1 = [| "140";"772";"1930" |]
 
-    let examples12_2 = [| "" |]
+    let examples12_2 = [| "AAAA\nBBCD\nBBCC\nEEEC" ;"OOOOO\nOXOXO\nOOOOO\nOXOXO\nOOOOO";"EEEEE\nEXXXX\nEEEEE\nEXXXX\nEEEEE";"AAAAAA\nAAABBA\nAAABBA\nABBAAA\nABBAAA\nAAAAAA";"RRRRIICCFF\nRRRRIICCCF\nVVRRRCCFFF\nVVRCCCJFFF\nVVVVCJJCFE\nVVIVCCJJEE\nVVIIICJJEE\nMIIIIIJJEE\nMIIISIJEEE\nMMMISSJEEE"|]
 
-    let exampleResults12_2 = [| "" |]
+    let exampleResults12_2 = [| "80" ;"436";"236";"368";"1206"|]
 
     // Day13
     let input13() = getInput 13
