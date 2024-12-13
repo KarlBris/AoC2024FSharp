@@ -193,13 +193,13 @@ module TestRunner =
     // Day13
     let input13() = getInput 13
 
-    let examples13_1 = [| "" |]
+    let examples13_1 = [| "Button A: X+94, Y+34\nButton B: X+22, Y+67\nPrize: X=8400, Y=5400\n\nButton A: X+26, Y+66\nButton B: X+67, Y+21\nPrize: X=12748, Y=12176\n\nButton A: X+17, Y+86\nButton B: X+84, Y+37\nPrize: X=7870, Y=6450\n\nButton A: X+69, Y+23\nButton B: X+27, Y+71\nPrize: X=18641, Y=10279" |]
 
-    let exampleResults13_1 = [| "" |]
+    let exampleResults13_1 = [| "480" |]
 
-    let examples13_2 = [| "" |]
+    let examples13_2 = [| |]
 
-    let exampleResults13_2 = [| "" |]
+    let exampleResults13_2 = [| |]
 
     // Day14
     let input14() = getInput 14
