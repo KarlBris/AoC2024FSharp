@@ -204,13 +204,13 @@ module TestRunner =
     // Day14
     let input14() = getInput 14
 
-    let examples14_1 = [| "" |]
+    let examples14_1 = [| "p=0,4 v=3,-3\np=6,3 v=-1,-3\np=10,3 v=-1,2\np=2,0 v=2,-1\np=0,0 v=1,3\np=3,0 v=-2,-2\np=7,6 v=-1,-3\np=3,0 v=-1,-2\np=9,3 v=2,3\np=7,3 v=-1,2\np=2,4 v=2,-3\np=9,5 v=-3,-3" |]
 
-    let exampleResults14_1 = [| "" |]
+    let exampleResults14_1 = [| "12" |]
 
-    let examples14_2 = [| "" |]
+    let examples14_2 = [||]
 
-    let exampleResults14_2 = [| "" |]
+    let exampleResults14_2 = [||]
 
     // Day15
     let input15() = getInput 15
