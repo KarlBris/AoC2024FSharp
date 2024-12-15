@@ -33,12 +33,17 @@ module Utils =
 
     let directionOfChar (c: char) : Direction =
         match c with
+        | '^'
         | 'U'
         | 'N' -> N
+        | 'v'
+        | 'V'
         | 'D'
         | 'S' -> S
+        | '<'
         | 'L'
         | 'W' -> W
+        | '>'
         | 'R'
         | 'E' -> E
         | _ -> failwith ""
@@ -158,6 +163,28 @@ module Utils =
 
     let removeLastElement (arr: 'a array) : 'a array =
         arr[0..(arr.Length-2)]
+
+    let removeKeysFromMap (keys: 'a seq) (map: Map<'a, _>) : Map<'a, _> =
+        keys |> Seq.fold (fun m k -> Map.remove k m) map
+
+    let addKeysToMap (keyValues: ('a * 'b) seq) (map: Map<'a, 'b>) : Map<'a, 'b> =
+        keyValues |> Seq.fold (fun m (k, v) -> Map.add k v m) map
+
+    let printMap ((maxX, maxY): Position) (map: Map<Position, char>) : unit =
+        [| 0..maxY |]
+        |> Array.iter (fun y ->
+            [| 0..maxX |]
+            |> Array.map (fun x -> map |> Map.tryFind (x, y) |> Option.defaultValue '.')
+            |> System.String
+            |> printfn "%A")
+
+    let printMapAutoBounds (map: Map<Position, char>) : unit =
+        let positions = map |> Map.toArray |> Array.map fst
+
+        let max =
+            (positions |> Array.maxBy fst |> fst, positions |> Array.maxBy snd |> snd)
+
+        printMap max map
 
     // From https://stackoverflow.com/questions/8919006/infinite-sequence-with-repeating-elements
     let rec numbersFrom n = 
