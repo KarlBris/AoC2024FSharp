@@ -16,6 +16,8 @@ module Utils =
 
     type Position = (int * int)
 
+    let directions : Direction array = [|N;S;W;E|]
+
     let addPos ((ax, ay): Position) ((bx, by): Position) : Position = (ax + bx, ay + by)
 
     let manhattanDistance ((a, b): Position) ((x, y): Position) : int = (abs (a - x)) + (abs (b - y))
